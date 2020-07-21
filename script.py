@@ -10,11 +10,11 @@ checkout = pd.read_csv('checkout.csv',
 purchase = pd.read_csv('purchase.csv',
                        parse_dates=[1])
 
-# inspect the DataFrames using print and head:
-#print(visits.head())
-#print(cart.head())
-#print(checkout.head())
-#print(purchase.head())
+# inspect the DataFrames using print and head
+print(visits.head())
+print(cart.head())
+print(checkout.head())
+print(purchase.head())
 
 # combine visits and cart
 visits_cart = pd.merge(visits, cart, how='left')
